@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+sqlalchemy
+pymysql
+#psycopg2-binary
+jupyter
+notebook
+#ipykernel
+statsmodels
+xgboost
+lightgbm
+joblib
+#tqdm
