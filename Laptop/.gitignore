@@ -25,6 +25,9 @@ ml_env/
 .env
 *.env
 .env.*
+project/
+
+
 
 # =====================================
 # Model Files & Artifacts
