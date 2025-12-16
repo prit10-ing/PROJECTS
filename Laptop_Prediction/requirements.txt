@@ -9,3 +9,4 @@ statsmodels
 xgboost
 lightgbm
 joblib
+python-dotenv
