@@ -1,18 +1,17 @@
 import joblib
 import pandas as pd
-import os
-from dotenv import load_dotenv
+
 import warnings
 
 warnings.filterwarnings('ignore')
-load_dotenv()
+
 
 
 class ModelPrediction:
 
     def __init__(self):
-        self.model_path = os.getenv("RANDOM_FOREST_MODEL")
-        self.encoder_path = os.getenv("LABEL_ENCODER_MODEL")
+        self.model_path = "D:\\Virtual\\Models\\randomperfect_forest_classifier.pkl"
+        self.encoder_path = "D:\\Virtual\\Models\\all_label_encoders.pkl"
         self.model = None
         self.encoders = None
         self.input_df = None

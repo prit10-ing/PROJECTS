@@ -13,8 +13,8 @@ load_dotenv()
 class PreprocessingPipeline:
 
     def __init__(self):
-        self.raw_path = os.getenv("RAW_DATA_PATH")
-        self.clean_path = os.getenv("CLEAN_DATA_PATH")
+        self.raw_path = "D:\\Virtual\\Data\\laptop_data.csv"
+        self.clean_path = 'D:/Virtual/Data/clean_data.csv'
         self.df = None
 
     # -------------------------------------------------------

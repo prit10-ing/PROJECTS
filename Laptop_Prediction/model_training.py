@@ -17,12 +17,12 @@ class ModelTrainingEvaluation:
 
     def __init__(self):
         load_dotenv()
-        self.clean_data_path = os.getenv("CLEAN_DATA_PATH")
-        self.model_path = os.getenv("RANDOM_FOREST_MODEL")
-        self.encoder_path = os.getenv("LABEL_ENCODER_MODEL")
-        self.test_size = float(os.getenv("TEST_SIZE"))
-        self.random_state = int(os.getenv("RANDOM_STATE"))
+        self.clean_data_path = "D:\\Virtual\\Data\\clean_data.csv"
+        self.model_path = "D://Virtual//Models//randomperfect_forest_classifier.pkl"
+        self.encoder_path = "D://Virtual//Models//all_label_encoders.pkl"
 
+        self.test_size = 0.20
+        self.random_state = 42
         self.df = None
         self.encoders = {}
         self.X_train = None

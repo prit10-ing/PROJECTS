@@ -2,16 +2,17 @@ import streamlit as st
 import joblib
 import pandas as pd
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
-MODEL_PATH = os.getenv("RANDOM_FOREST_MODEL")
-ENCODER_PATH = os.getenv("LABEL_ENCODER_MODEL")
 
-# Load Model & Encoders
+import os
+import joblib
+MODEL_PATH = os.path.join("D:\\Virtual\\Models\\randomperfect_forest_classifier.pkl")
+ENCODER_PATH = os.path.join("D:\\Virtual\\Models\\all_label_encoders.pkl")
+
 model = joblib.load(MODEL_PATH)
 encoders = joblib.load(ENCODER_PATH)
+
 
 st.title("💻 Laptop Price Prediction App")
 
