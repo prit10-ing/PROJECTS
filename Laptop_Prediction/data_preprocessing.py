@@ -3,11 +3,10 @@ import numpy as np
 import seaborn as sn
 import matplotlib.pyplot as plt
 import warnings
-import os
-from dotenv import load_dotenv
+
 
 warnings.filterwarnings('ignore')
-load_dotenv()
+
 
 
 class PreprocessingPipeline:
