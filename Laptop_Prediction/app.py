@@ -7,7 +7,11 @@ import os
 # Paths (Cloud-safe)
 # ==========================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "Models", "randomperfect_forest_classifier.pkl")
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "Models",
+    "randomperfect_forest_classifier.pkl"
+)
 ENCODER_PATH = os.path.join(BASE_DIR, "Models", "all_label_encoders.pkl")
 
 # ==========================

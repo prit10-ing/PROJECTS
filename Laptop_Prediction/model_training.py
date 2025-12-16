@@ -16,14 +16,17 @@ import joblib
 class ModelTrainingEvaluation:
 
     def __init__(self):
-        load_dotenv()
-        self.clean_data_path = "D:\\Virtual\\Data\\clean_data.csv"
-        self.model_path = "D://Virtual//Models//randomperfect_forest_classifier.pkl"
-        self.encoder_path = "D://Virtual//Models//all_label_encoders.pkl"
+       
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+        self.clean_data_path = os.path.join(BASE_DIR, "Data", "clean_data.csv")
+        self.model_path = os.path.join(BASE_DIR, "Models", "randomperfect_forest_classifier.pkl")
+        self.encoder_path = os.path.join(BASE_DIR, "Models", "all_label_encoders.pkl")
+
 
         self.test_size = 0.20
         self.random_state = 42
-        self.df = None
+        self.df = None  
         self.encoders = {}
         self.X_train = None
         self.X_test = None
